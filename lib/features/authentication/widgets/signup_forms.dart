@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,24 +13,24 @@ class SignupForms extends StatelessWidget {
     return  Column(
       children: [
         AppTextFormField(
-          hintText: "الاسم الكامل",
+          hintText: "full_name".tr(),
           validator: (value) {},
         ),
         SizedBox(height: 16.h),
         AppTextFormField(
-          hintText: "البريد الالكتروني",
+          hintText: "email_address".tr(),
           inputType: TextInputType.emailAddress,
           validator: (value) {},
         ),
         SizedBox(height: 16.h),
         AppTextFormField(
-          hintText: "رقم الهاتف",
+          hintText: "phone_number".tr(),
           inputType: TextInputType.phone,
           validator: (value) {},
         ),
         SizedBox(height: 16.h),
         AppTextFormField(
-          hintText: "كلمة السر",
+          hintText: "password".tr(),
           validator: (value) {},
           isObscureText: true,
           suffixIcon: Icon(
@@ -40,7 +41,7 @@ class SignupForms extends StatelessWidget {
         ),
         SizedBox(height: 16.h),
         AppTextFormField(
-          hintText: "تأكيد كلمة السر",
+          hintText: "password_confirmation".tr(),
           validator: (value) {},
           isObscureText: true,
           suffixIcon: Icon(

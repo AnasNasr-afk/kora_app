@@ -1,0 +1,13 @@
+{
+  "create_account": "Create account",
+  "have_account": "Have account",
+  "full_name" : "Full name",
+  "email_address" : "Email address",
+  "phone_number" : "Phone number" ,
+  "password" : "Password",
+  "password_confirmation" : "Password confirmation",
+  "login" : "Login",
+  "signup" : "Sign up",
+  "login_with_google" : "Login with Google" ,
+  "forget_password" : "Forget password?"
+}

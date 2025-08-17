@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -5,19 +6,24 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../core/themes/color_manager.dart';
 import '../../../core/themes/text_styles.dart';
 import '../../../core/widgets/app_text_button.dart';
+import '../cubit/auth_cubit.dart';
 
 class LoginButtons extends StatelessWidget {
   const LoginButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var cubit = AuthCubit.get(context);
     return Column(
       children: [
         AppTextButton(
           onPressed: () {},
           child: Text(
-            'تسجيل الدخول',
-            style: TextStyles.font14DarkWhiteMedium,
+            cubit.hasAccount
+                ? "login".tr()
+                : "signup".tr(),
+
+            style: TextStyles.font15DarkWhiteBold,
           ),
         ),
         SizedBox(height: 16.h),
@@ -44,15 +50,17 @@ class LoginButtons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+
+
+                Text(
+                 "login_with_google".tr(),
+                  style: TextStyles.font15DarkWhiteBold,
+                ),
+                SizedBox(width: 8.w),
                 Icon(
                   FontAwesomeIcons.google,
                   color: ColorManager.darkGreen,
                   size: 20.sp,
-                ),
-                SizedBox(width: 8.w),
-                Text(
-                  'التسجيل بحساب جوجل',
-                  style: TextStyles.font14DarkWhiteMedium,
                 ),
               ],
             ),

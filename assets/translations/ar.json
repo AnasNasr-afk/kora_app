@@ -1,0 +1,13 @@
+{
+  "create_account": "انشاء حساب",
+  "have_account": "امتلك حساب",
+  "full_name" : "الاسم الكامل",
+  "email_address" : "البريد الالكتروني",
+  "phone_number" : "رقم الهاتف" ,
+  "password" : "كلمة السر",
+  "password_confirmation" : "تأكيد كلمة السر",
+  "login" : "تسجيل الدخول",
+  "signup" : "تسجيل جديد",
+  "login_with_google" : "التسجيل بحساب جوجل" ,
+  "forget_password" : "هل نسيت كلمة السر؟"
+}

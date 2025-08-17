@@ -6,15 +6,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:kora_app/core/themes/color_manager.dart';
 
 class TextStyles {
-  static TextStyle font14TealBlueMedium = GoogleFonts.cairo(
+  static TextStyle font14TealBlueSemiBold = GoogleFonts.cairo(
     fontSize: 14.sp,
     color: ColorManager.tealBlue,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
   );
-  static TextStyle font14DarkWhiteMedium = GoogleFonts.cairo(
-    fontSize: 14.sp,
+  static TextStyle font15DarkWhiteBold = GoogleFonts.cairo(
+    fontSize: 15.sp,
     color: ColorManager.darkWhite,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.bold,
   );
   static  TextStyle font14DarkGreenMedium = GoogleFonts.cairo(
     fontSize: 14.sp,
