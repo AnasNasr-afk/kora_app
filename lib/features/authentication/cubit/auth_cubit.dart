@@ -7,7 +7,7 @@ class AuthCubit extends Cubit<AuthStates> {
 
   static AuthCubit get(context) => BlocProvider.of(context);
 
-  bool hasAccount = false;
+  bool hasAccount = true;
 
   void toggleAccountStatus() {
     hasAccount = !hasAccount;

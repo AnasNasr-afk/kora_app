@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,12 +14,12 @@ class EmailPasswordForm extends StatelessWidget {
     return Column(
       children: [
         AppTextFormField(
-          hintText: "البريد الالكتروني",
+          hintText: "email_address".tr(),
           validator: (value) {},
         ),
         SizedBox(height: 16.h),
         AppTextFormField(
-          hintText: "كلمة السر",
+          hintText: "password".tr(),
           validator: (value) {},
           isObscureText: true,
           suffixIcon: Icon(
@@ -35,7 +36,7 @@ class EmailPasswordForm extends StatelessWidget {
                 onPressed: () {},
                 style: TextButton.styleFrom(padding: EdgeInsets.zero),
                 child: Text(
-                  "هل نسيت كلمة السر؟",
+                  "forget_password".tr(),
                   style: TextStyles.font12DarkWhiteSemiBold,
                 ),
               ),
