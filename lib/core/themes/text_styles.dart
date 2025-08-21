@@ -11,6 +11,56 @@ class TextStyles {
     color: ColorManager.tealBlue,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle font20TealBlueBold = GoogleFonts.cairo(
+    fontSize: 20.sp,
+    color: ColorManager.tealBlue,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle font12TealBlueSemiBold = GoogleFonts.cairo(
+    fontSize: 12.sp,
+    color: ColorManager.tealBlue,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle font10DarkWhiteBold = GoogleFonts.cairo(
+    fontSize: 10.sp,
+    color: ColorManager.darkWhite,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle font12DarkWhiteBold = GoogleFonts.cairo(
+    fontSize: 12.sp,
+    color: ColorManager.darkWhite,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle font8DarkWhiteBold = GoogleFonts.cairo(
+    fontSize: 8.sp,
+    color: ColorManager.darkWhite,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle font10tealBlueSemiBold = GoogleFonts.cairo(
+    fontSize: 10.sp,
+    color: ColorManager.tealBlue,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle font16DarkWhiteMedium = GoogleFonts.cairo(
+    fontSize: 16.sp,
+    color: ColorManager.darkWhite,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle font9DarkWhiteSemiBold = GoogleFonts.cairo(
+    fontSize: 9.sp,
+    color: ColorManager.darkWhite,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle font10TealBlueSemiBold = GoogleFonts.cairo(
+    fontSize: 10.sp,
+    color: ColorManager.tealBlue,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle font20DarkGreenBold = GoogleFonts.cairo(
+    fontSize: 20.sp,
+    color: ColorManager.darkGreen,
+    fontWeight: FontWeight.bold,
+  );
   static TextStyle font15DarkWhiteBold = GoogleFonts.cairo(
     fontSize: 15.sp,
     color: ColorManager.darkWhite,

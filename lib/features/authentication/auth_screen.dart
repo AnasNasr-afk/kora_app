@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kora_app/core/themes/color_manager.dart';
 import 'package:kora_app/features/authentication/cubit/auth_cubit.dart';
-import 'package:kora_app/features/authentication/widgets/app_logo.dart';
+import 'package:kora_app/core/widgets/app_logo.dart';
 import 'package:kora_app/features/authentication/widgets/email_password_form.dart';
 import 'package:kora_app/features/authentication/widgets/login_buttons.dart';
 import 'package:kora_app/features/authentication/widgets/signup_forms.dart';
@@ -52,7 +52,10 @@ class _AuthScreenState extends State<AuthScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              AppLogo(),
+              AppLogo(
+                width: 180.w,
+                height: 75.h,
+              ),
               SizedBox(height: 60.h),
 
               Row(

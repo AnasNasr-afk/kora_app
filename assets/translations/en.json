@@ -9,5 +9,34 @@
   "login" : "Login",
   "signup" : "Sign up",
   "login_with_google" : "Login with Google" ,
-  "forget_password" : "Forget password?"
+  "forget_password" : "Forget password?",
+
+
+
+
+  "join_now" : "JOIN NOW",
+  "book_now" : "BOOK NOW",
+
+
+
+
+
+  "hour": "HOUR",
+  "min": "MIN",
+  "sec": "SEC",
+
+
+  "game_time_start": "Kickoff · 18 Sep, 9:00 PM",
+
+
+
+
+  "quick_choices": "Quick Choices",
+
+  "favourite_courts": "Favourite courts",
+  "photos_from_games": "Photos from games",
+  "customer_support": "Customer support",
+
+
+  "nearby_courts": "Nearby Courts"
 }

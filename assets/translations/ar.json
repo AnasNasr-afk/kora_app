@@ -9,5 +9,35 @@
   "login" : "تسجيل الدخول",
   "signup" : "تسجيل جديد",
   "login_with_google" : "التسجيل بحساب جوجل" ,
-  "forget_password" : "هل نسيت كلمة السر؟"
+  "forget_password" : "هل نسيت كلمة السر؟",
+
+
+  "join_now" : "انضم الآن",
+  "book_now" : "احجز الآن",
+
+
+
+  "hour": "ساعة",
+  "min": "دقيقة",
+  "sec": "ثانية",
+
+  "game_time_start": "الانطلاق · 18 سبتمبر، 9:00 م",
+
+
+  "quick_choices": "خيارات سريعة",
+
+  "favourite_courts": "الملاعب المفضلة",
+  "photos_from_games": "صور من المباريات",
+  "customer_support": "الدعم الفني",
+
+  "nearby_courts": "الملاعب القريبة"
+
+
+
+
+
+
+
+
+
 }
