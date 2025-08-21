@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../../core/routing/routes.dart';
 import '../../../core/themes/color_manager.dart';
 import '../../../core/themes/text_styles.dart';
 import '../../../core/widgets/app_text_button.dart';
@@ -17,7 +18,11 @@ class LoginButtons extends StatelessWidget {
     return Column(
       children: [
         AppTextButton(
-          onPressed: () {},
+          onPressed: () {
+            //TODO: Implement login/signup logic
+            // For now, just navigate to home layout
+            Navigator.pushReplacementNamed(context, Routes.homeLayout);
+          },
           child: Text(
             cubit.hasAccount
                 ? "login".tr()
@@ -50,7 +55,6 @@ class LoginButtons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-
 
                 Text(
                  "login_with_google".tr(),

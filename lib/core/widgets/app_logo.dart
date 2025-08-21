@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppLogo extends StatelessWidget {
-  const AppLogo({super.key});
+  final double height;
+  final double width;
+  const AppLogo({super.key,
+    required this.height,
+    required this.width});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 75.h,
-      width: 180.w,
+      height: height,
+      width: width,
       decoration: BoxDecoration(
         image: DecorationImage(
             fit: BoxFit.contain,

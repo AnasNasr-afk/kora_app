@@ -5,30 +5,59 @@ import 'package:kora_app/core/themes/color_manager.dart';
 class AppTextButton extends StatelessWidget {
   final void Function() onPressed;
   final Widget child;
-
   final ButtonStyle? buttonStyle;
+  final Gradient? gradient; // 🔥 added option
 
-  const AppTextButton(
-      {super.key,
-        required this.onPressed,
-        required this.child,
-        this.buttonStyle});
+  const AppTextButton({
+    super.key,
+    required this.onPressed,
+    required this.child,
+    this.buttonStyle,
+    this.gradient,
+  });
 
   @override
   Widget build(BuildContext context) {
+    if (gradient != null) {
+      return Container(
+        decoration: BoxDecoration(
+          gradient: gradient,
+          borderRadius: BorderRadius.circular(12.r),
+        ),
+        child: TextButton(
+          onPressed: onPressed,
+          style: buttonStyle ??
+              ButtonStyle(
+                minimumSize: WidgetStatePropertyAll(
+                  Size(330.w, 50.h),
+                ),
+                shape: WidgetStatePropertyAll(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.r),
+                  ),
+                ),
+                backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
+              ),
+          child: child,
+        ),
+      );
+    }
+
     return TextButton(
       onPressed: onPressed,
       style: buttonStyle ??
           ButtonStyle(
             backgroundColor: const WidgetStatePropertyAll(ColorManager.primaryColor),
-            minimumSize:  WidgetStatePropertyAll(
+            minimumSize: WidgetStatePropertyAll(
               Size(330.w, 50.h),
             ),
             shape: WidgetStatePropertyAll(
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.r))),
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12.r),
+              ),
+            ),
           ),
-      child: child ,
-
+      child: child,
     );
   }
 }

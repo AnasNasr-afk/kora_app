@@ -4,6 +4,9 @@ import 'package:kora_app/core/routing/routes.dart';
 import 'package:kora_app/features/authentication/auth_screen.dart';
 
 import '../../features/authentication/cubit/auth_cubit.dart';
+import '../../features/home/cubit/home_cubit.dart';
+import '../../features/home/layout/home_layout.dart';
+
 
 class AppRouter {
   Route onGenerateRoute(RouteSettings settings) {
@@ -17,6 +20,10 @@ class AppRouter {
             child: AuthScreen(),
           ),
         );
+      case Routes.homeLayout:
+        return MaterialPageRoute(builder: (_) => BlocProvider(
+            create: (context) => HomeCubit(),
+            child: HomeLayout()));
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
