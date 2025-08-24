@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kora_app/features/calender/calender_screen.dart';
+import 'package:kora_app/features/calender/calendar_screen.dart';
 import 'package:kora_app/features/notifications/notifications_screen.dart';
 import 'package:kora_app/features/settings/settings_screen.dart';
 
@@ -18,7 +18,7 @@ class HomeCubit extends Cubit<HomeStates> {
 
   final List<Widget> screens = [
     HomeScreen(),
-    CalenderScreen(),
+    CalendarScreen(),
     NotificationsScreen(),
     SettingsScreen(),
   ];
