@@ -11,6 +11,16 @@ class TextStyles {
     color: ColorManager.tealBlue,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle font16TealBlueMedium = GoogleFonts.cairo(
+    fontSize: 16.sp,
+    color: ColorManager.tealBlue,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle font18TealBlueSemiBold = GoogleFonts.cairo(
+    fontSize: 18.sp,
+    color: ColorManager.tealBlue,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle font20TealBlueBold = GoogleFonts.cairo(
     fontSize: 20.sp,
     color: ColorManager.tealBlue,
